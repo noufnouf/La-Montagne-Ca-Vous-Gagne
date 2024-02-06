@@ -1,0 +1,51 @@
+header {
+  min-height: 100vh;
+  @include fFDcALcJCc;
+  position: relative;
+  color: $wihte1;
+
+  .contenaire-header1 {
+    @include fFDcALcJCev;
+    height: 450px;
+    h1 {
+      font-size: 4.5rem;
+      font-family: $font1;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      width: 700px;
+      text-align: center;
+    }
+    p {
+      margin-bottom: 20px;
+      text-align: center;
+      font-style: italic;
+    }
+    a {
+      border: 1px solid $wihte1;
+      padding: 5px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      @include fFDcALcJCc;
+
+      i {
+        font-size: 2rem;
+      }
+    }
+    transform: translateY(40px);
+    opacity: 0;
+    animation: animationcontenaire-header1 1.5s forwards;
+    @keyframes animationcontenaire-header1 {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contenaire-header2 {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+}
