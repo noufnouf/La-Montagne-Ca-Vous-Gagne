@@ -1,38 +1,32 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-  background:url(/assets/img/bg.jpg) no-repeat center/cover fixed;
+body {
+  background: url(/assets/img/bg.jpg) no-repeat center/cover fixed;
   height: 100vh;
-  animation: aparitionnoir 1.5s ease;
-  @keyframes aparitionnoir {
-      to {
-          animation-delay: 0.5s;
-        background: rgb(0, 0, 0);
-        }
+  text-align: center;
+  margin: 0 auto;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    li {
-        list-style: none;
-    }
-    a{
-        color: white;
-        text-decoration: none;
-    }
-@font-face {
-    font-family: inter;
-    src: url("/assets/fonts/Inter-ExtraBold.ttf");
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
 }
 @font-face {
-    font-family: merri;
-    src: url("/assets/fonts/Merriweather-Light.ttf");
+  font-family: inter;
+  src: url("/assets/fonts/Inter-ExtraBold.ttf");
+}
+@font-face {
+  font-family: merri;
+  src: url("/assets/fonts/Merriweather-Light.ttf");
 }
 $font1: inter, sans-serif;
 $font2: merri, serif;
 $wihte1: #f3f3f3;
-
