@@ -44,6 +44,10 @@ header {
     min-width: 80%;
     background: rgba(255, 255, 255, 0.413);
     #liste-left {
+      &:hover li:not(:hover) {
+       background: none;
+       color: white;
+      }
       height: 100%;
       width: 50%;
       display: flex;

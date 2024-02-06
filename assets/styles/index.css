@@ -162,6 +162,10 @@ header .contenaire-header2 #liste-left {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+header .contenaire-header2 #liste-left:hover li:not(:hover) {
+  background: none;
+  color: white;
+}
 header .contenaire-header2 #liste-left li {
   text-transform: uppercase;
   font-family: inter, sans-serif;
