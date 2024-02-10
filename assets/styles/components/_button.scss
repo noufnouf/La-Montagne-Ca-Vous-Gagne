@@ -1,0 +1,16 @@
+button{
+    padding: 10px;
+    width: 200px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: none;
+transition: 0.2s;
+border: 1px solid rgba(0, 0, 0, 0.421);
+font-family: $font1;
+   &:hover{
+        background: black;
+        color: white;
+        border: none;
+        transform: scale(1.2);
+    }
+}

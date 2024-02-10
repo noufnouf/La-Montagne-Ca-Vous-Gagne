@@ -5,31 +5,7 @@ html {
 body {
   background: url(/assets/img/bg.jpg) no-repeat center/cover fixed;
   height: 100vh;
-  text-align: center;
   margin: 0 auto;
-}
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  -webkit-animation: ouvertureSurLeSite 1s ease forwards;
-          animation: ouvertureSurLeSite 1s ease forwards;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-@-webkit-keyframes ouvertureSurLeSite {
-  to {
-    background: none;
-  }
-}
-@keyframes ouvertureSurLeSite {
-  to {
-    background: none;
-  }
 }
 
 * {
@@ -56,6 +32,25 @@ a {
   font-family: merri;
   src: url("/assets/fonts/Merriweather-Light.ttf");
 }
+button {
+  padding: 10px;
+  width: 200px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.421);
+  font-family: inter, sans-serif;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: none;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 header {
   min-height: 100vh;
   display: -webkit-box;
@@ -73,13 +68,6 @@ header {
           justify-content: center;
   position: relative;
   color: #f3f3f3;
-  opacity: 0;
-  -webkit-transform: translateY(40px);
-          transform: translateY(40px);
-  -webkit-animation: apparitionDuHeader 1s ease forwards;
-          animation: apparitionDuHeader 1s ease forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 header .contenaire-header1 {
   display: -webkit-box;
@@ -95,27 +83,23 @@ header .contenaire-header1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 450px;
+  height: 500px;
 }
 header .contenaire-header1 h1 {
   font-size: 4.5rem;
   font-family: inter, sans-serif;
   text-transform: uppercase;
   letter-spacing: 6px;
-  width: 700px;
+  width: 100%;
   text-align: center;
 }
 header .contenaire-header1 p {
   margin-bottom: 20px;
   text-align: center;
   font-style: italic;
+  font-family: merri, serif;
 }
 header .contenaire-header1 a {
-  border: 1px solid #f3f3f3;
-  padding: 5px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,9 +113,23 @@ header .contenaire-header1 a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border: 1px solid #f3f3f3;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: rgba(0, 0, 0, 0.215);
+  cursor: pointer;
 }
 header .contenaire-header1 a i {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+header .contenaire-header1 a:hover {
+  background: #f3f3f3;
+  color: black;
+  scale: 1.2;
 }
 header .contenaire-header2 {
   position: absolute;
@@ -146,7 +144,7 @@ header .contenaire-header2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 50px;
-  min-width: 80%;
+  width: 80%;
   background: rgba(255, 255, 255, 0.413);
 }
 header .contenaire-header2 #liste-left {
@@ -211,6 +209,7 @@ header .contenaire-header2 #liste-right li {
   font-size: 1.5rem;
   font-family: inter, sans-serif;
   cursor: pointer;
+  margin: 0 auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -218,17 +217,66 @@ header .contenaire-header2 #liste-right li:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
-@-webkit-keyframes apparitionDuHeader {
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+
+main {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background: #f3f3f3;
+  height: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: 60px;
 }
-@keyframes apparitionDuHeader {
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+main div {
+  font-size: 1.3rem;
+  color: rgb(184, 181, 181);
+  width: 80%;
+}
+main div ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main div ul li {
+  width: 100%;
+}
+main div ul li:nth-child(1),
+main div ul li:last-child {
+  height: 1px;
+  background: rgb(184, 181, 181);
+}
+main h2 {
+  font-family: inter, sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+main p {
+  width: 50%;
+  font-size: 1.1rem;
+  line-height: 30px;
+  font-style: italic;
+  font-family: merri, serif;
+  color: rgb(184, 181, 181);
+}
+main img {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

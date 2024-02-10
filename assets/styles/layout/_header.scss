@@ -6,34 +6,42 @@ header {
 
   .contenaire-header1 {
     @include fFDcALcJCev;
-    height: 450px;
+    height: 500px;
     h1 {
       font-size: 4.5rem;
       font-family: $font1;
       text-transform: uppercase;
       letter-spacing: 6px;
-      width: 700px;
+      width: 100%;
       text-align: center;
     }
     p {
       margin-bottom: 20px;
       text-align: center;
       font-style: italic;
+      font-family: $font2;
     }
     a {
+      @include fFDcALcJCc;
       border: 1px solid $wihte1;
       padding: 5px;
       width: 80px;
       height: 80px;
       border-radius: 50%;
-      @include fFDcALcJCc;
-
+      transition: 0.3s;
+      background: rgba(0, 0, 0, 0.215);
+      cursor: pointer;
       i {
-        font-size: 2rem;
+        font-size: 3rem;
+      }
+      &:hover {
+        background: $wihte1;
+        color: black;
+        scale: 1.2;
       }
     }
   }
-  
+
   .contenaire-header2 {
     position: absolute;
     bottom: 0;
@@ -41,12 +49,12 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    min-width: 80%;
+    width: 80%;
     background: rgba(255, 255, 255, 0.413);
     #liste-left {
       &:hover li:not(:hover) {
-       background: none;
-       color: white;
+        background: none;
+        color: white;
       }
       height: 100%;
       width: 50%;
@@ -86,6 +94,7 @@ header {
         font-size: 1.5rem;
         font-family: $font1;
         cursor: pointer;
+        margin: 0 auto;
         transition: 0.3s;
         &:hover {
           transform: scale(1.5);
@@ -93,14 +102,14 @@ header {
       }
     }
   }
-  opacity: 0;
-  transform: translateY(40px);
-  animation: apparitionDuHeader 1s ease forwards;
-  animation-delay: 1s;
-  @keyframes apparitionDuHeader{
-    to{
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  // opacity: 0;
+  // transform: translateY(40px);
+  // animation: apparitionDuHeader 1s ease forwards;
+  // animation-delay: 1s;
+  // @keyframes apparitionDuHeader {
+  //   to {
+  //     opacity: 1;
+  //     transform: translateY(0);
+  //   }
+  // }
 }

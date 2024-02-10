@@ -1,0 +1,42 @@
+main {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background: $wihte1;
+  height: 1600px;
+  @include fFDcALcJCsb;
+  text-align: center;
+  padding: 60px;
+  div {
+    font-size: 1.3rem;
+    color: $lightGray;
+    width: 80%;
+    ul {
+      @include DfAcJCc;
+      li {
+        width: 100%;
+      }
+      li:nth-child(1),
+      li:last-child {
+        height: 1px;
+        background: $lightGray;
+      }
+    }
+  }
+  h2{
+    font-family:$font1;
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  p{
+    width: 50%;
+    font-size: 1.1rem;
+    line-height: 30px;
+    font-style: italic;
+    font-family: $font2;
+    color: $lightGray;
+  }
+  img {
+    width: 100%;
+  }
+}
