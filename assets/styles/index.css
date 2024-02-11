@@ -223,7 +223,10 @@ main {
   height: auto;
   margin: 0 auto;
   background: #f3f3f3;
-  height: 1600px;
+  padding: 60px;
+}
+main section:first-child {
+  height: 1500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,15 +240,9 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  padding: 60px;
 }
-main div {
-  font-size: 1.3rem;
-  color: rgb(184, 181, 181);
-  width: 80%;
-}
-main div ul {
+main section:first-child ul {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,27 +253,124 @@ main div ul {
       -ms-flex-pack: center;
           justify-content: center;
 }
-main div ul li {
-  width: 100%;
-}
-main div ul li:nth-child(1),
-main div ul li:last-child {
-  height: 1px;
-  background: rgb(184, 181, 181);
-}
-main h2 {
-  font-family: inter, sans-serif;
-  text-transform: uppercase;
-  font-size: 3rem;
-}
-main p {
-  width: 50%;
-  font-size: 1.1rem;
-  line-height: 30px;
-  font-style: italic;
+main section:first-child ul li {
+  font-size: 20px;
   font-family: merri, serif;
   color: rgb(184, 181, 181);
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-main img {
+main section:first-child ul li:first-child,
+main section:first-child ul li:last-child {
+  font-size: 30px;
+  height: 1px;
+  background: black;
   width: 100%;
+}
+main section:first-child h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inter, sans-serif;
+  letter-spacing: 3px;
+}
+main section:first-child p {
+  text-align: center;
+  width: 50%;
+  font-size: 1.1rem;
+  font-family: merri, serif;
+  line-height: 40px;
+  font-style: italic;
+}
+main section:first-child img {
+  width: 100%;
+}
+main section:last-child {
+  margin-top: 120px;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main section:last-child #cote-gauche {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section:last-child #cote-gauche h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inter, sans-serif;
+  letter-spacing: 3px;
+}
+main section:last-child #cote-gauche p {
+  text-align: left;
+  width: 80%;
+  font-size: 0.9rem;
+  font-family: merri, serif;
+  line-height: 40px;
+  font-style: italic;
+}
+main section:last-child #cote-gauche img {
+  width: 80%;
+}
+main section:last-child #cote-drois {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main section:last-child #cote-drois h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: inter, sans-serif;
+  letter-spacing: 3px;
+}
+main section:last-child #cote-drois p {
+  text-align: left;
+  width: 80%;
+  font-size: 0.9rem;
+  font-family: merri, serif;
+  line-height: 40px;
+  font-style: italic;
+}
+main section:last-child #cote-drois img {
+  width: 80%;
 }/*# sourceMappingURL=index.css.map */

@@ -22,3 +22,25 @@
   align-items: center;
   justify-content: center;
 }
+@mixin ph2imgsection2{
+  height: 100%;
+      @include fFDcALcJCsb;
+      h2 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font1;
+        letter-spacing: 3px;
+      }
+      p {
+        text-align:left;
+        width: 80%;
+        font-size: 0.9rem;
+        font-family: $font2;
+        line-height: 40px;
+        font-style: italic;
+      }
+      img {
+        width: 80%;
+      }
+}

@@ -3,40 +3,60 @@ main {
   height: auto;
   margin: 0 auto;
   background: $wihte1;
-  height: 1600px;
-  @include fFDcALcJCsb;
-  text-align: center;
   padding: 60px;
-  div {
-    font-size: 1.3rem;
-    color: $lightGray;
-    width: 80%;
+  section:first-child {
+    height:1500px;
+    @include fFDcALcJCsb;
     ul {
+      width: 100%;
       @include DfAcJCc;
       li {
+        font-size: 20px;
+        font-family: $font2;
+        color: $lightGray;
+        width: 80%;
+        @include DfAcJCc;
+      }
+      li:first-child,
+      li:last-child {
+        font-size: 30px;
+        height: 1px;
+        background: black;
         width: 100%;
       }
-      li:nth-child(1),
-      li:last-child {
-        height: 1px;
-        background: $lightGray;
-      }
+    }
+    h2 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $font1;
+      letter-spacing: 3px;
+    }
+    p {
+      text-align: center;
+      width: 50%;
+      font-size: 1.1rem;
+      font-family: $font2;
+      line-height: 40px;
+      font-style: italic;
+    }
+    img {
+      width: 100%;
     }
   }
-  h2{
-    font-family:$font1;
-    text-transform: uppercase;
-    font-size: 3rem;
-  }
-  p{
-    width: 50%;
-    font-size: 1.1rem;
-    line-height: 30px;
-    font-style: italic;
-    font-family: $font2;
-    color: $lightGray;
-  }
-  img {
-    width: 100%;
+  section:last-child {
+   margin-top: 120px;
+   height: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #cote-gauche {
+      @include ph2imgsection2;
+    }
+    #cote-drois{
+      @include ph2imgsection2;
+    }
   }
 }
+  
+  
