@@ -401,17 +401,76 @@ footer form {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+footer form label {
+  text-transform: uppercase;
+  font-family: inter, sans-serif;
+  color: rgb(134, 133, 133);
+}
 footer form input {
-  height: 30px;
-  width: 80%;
+  height: 40px;
+  width: 90%;
+  border: 1px solid rgb(184, 181, 181);
 }
 footer form textarea {
   height: 100px;
-  width: 80%;
+  width: 90%;
+  border: 1px solid rgb(184, 181, 181);
+  resize: none;
 }
 footer form button {
   margin-top: 20px;
 }
-footer section div {
+footer section {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-left: 1px solid rgb(184, 181, 181);
+}
+footer section div {
+  height: 25%;
+  border-bottom: 1px solid rgb(184, 181, 181);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer section div h3 {
+  text-align: center;
+}
+footer section div article {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer section div article a {
+  margin-right: 40px;
+}
+footer section div article a i {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  color: black;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+footer section div article a i:hover {
+  background: black;
+  color: white;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }/*# sourceMappingURL=index.css.map */

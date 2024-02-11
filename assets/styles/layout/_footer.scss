@@ -13,21 +13,63 @@ footer {
     flex-direction: column;
     align-items: stretch;
     justify-content: space-between;
+    label{
+    text-transform: uppercase;
+    font-family: $font1;
+    color: rgb(134, 133, 133);
+    }
     input{
-        height: 30px;
-        width: 80%;
+        height: 40px;
+        width: 90%;
+        border: 1px solid $lightGray;
     }
 textarea{
     height: 100px;
-    width: 80%;
+    width: 90%;
+    border: 1px solid $lightGray;
+    resize: none;
   }
   button{
     margin-top: 20px;
   }
 }
 section{
-div{
+   
     width: 100%;
+    @include fFDcALcJCsb;
+    border-left: 1px solid $lightGray;
+div{
+    height: 25%;
+    border-bottom: 1px solid $lightGray;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+   h3{
+    text-align: center;
+   }
+    article{
+        width: 80%;
+        
+        display: flex;        
+        
+        a{
+            margin-right: 40px;
+            i{
+                border: 1px solid black;
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 1.4rem;
+                color: black;
+                transition: 3s;
+                &:hover{
+                    background: black;
+                    color: white;
+                    transform: scale(1.3);
+                }
+        }
+    }
+}
 }
 }
 }
