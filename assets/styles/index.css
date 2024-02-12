@@ -93,11 +93,21 @@ header .contenaire-header1 h1 {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 400px) {
+  header .contenaire-header1 h1 {
+    font-size: 2rem;
+  }
+}
 header .contenaire-header1 p {
   margin-bottom: 20px;
   text-align: center;
   font-style: italic;
   font-family: merri, serif;
+}
+@media screen and (max-width: 1181px) {
+  header .contenaire-header1 p {
+    font-size: 0.8rem;
+  }
 }
 header .contenaire-header1 a {
   display: -webkit-box;
@@ -167,7 +177,7 @@ header .contenaire-header2 #liste-left:hover li:not(:hover) {
 header .contenaire-header2 #liste-left li {
   text-transform: uppercase;
   font-family: inter, sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -188,12 +198,17 @@ header .contenaire-header2 #liste-left li:hover {
   color: black;
   letter-spacing: 5px;
 }
-header .contenaire-header2 #liste-left li:first-child {
+@media screen and (max-width: 400px) {
+  header .contenaire-header2 #liste-left li:hover {
+    font-size: 0.4rem;
+  }
+}
+header .contenaire-header2 #liste-left li li:first-child {
   background: white;
   color: black;
 }
-header .contenaire-header2 #liste-right {
-  width: 30%;
+header .contenaire-header2 #liste-left #liste-right {
+  width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,15 +220,15 @@ header .contenaire-header2 #liste-right {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-header .contenaire-header2 #liste-right li {
-  font-size: 1.5rem;
+header .contenaire-header2 #liste-left #liste-right li {
+  font-size: rem;
   font-family: inter, sans-serif;
   cursor: pointer;
   margin: 0 auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header .contenaire-header2 #liste-right li:hover {
+header .contenaire-header2 #liste-left #liste-right li:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }

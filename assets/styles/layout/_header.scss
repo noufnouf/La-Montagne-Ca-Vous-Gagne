@@ -14,12 +14,19 @@ header {
       letter-spacing: 6px;
       width: 100%;
       text-align: center;
+      @media screen and (max-width:400px){
+        font-size: 2rem;
+
+      }
     }
     p {
       margin-bottom: 20px;
       text-align: center;
       font-style: italic;
       font-family: $font2;
+      @media screen and (max-width:1181px) {
+        font-size: 0.8rem;
+      }
     }
     a {
       @include fFDcALcJCc;
@@ -64,7 +71,7 @@ header {
       li {
         text-transform: uppercase;
         font-family: $font1;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         width: 100%;
         height: 100%;
         display: flex;
@@ -76,7 +83,10 @@ header {
           background: white;
           color: black;
           letter-spacing: 5px;
-        }
+          @media screen and (max-width:400px){
+            font-size: 0.4rem;
+          }
+
       }
       // element qui ne possède pas de hover
       li:first-child {
@@ -85,14 +95,15 @@ header {
       }
     }
     #liste-right {
-      width: 30%;
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       li {
-        font-size: 1.5rem;
+        font-size: rem;
         font-family: $font1;
+        
         cursor: pointer;
         margin: 0 auto;
         transition: 0.3s;
@@ -112,4 +123,5 @@ header {
   //     transform: translateY(0);
   //   }
   // }
+}
 }
