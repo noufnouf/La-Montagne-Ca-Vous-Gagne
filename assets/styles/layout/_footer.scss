@@ -8,7 +8,7 @@ footer {
   form{
     padding: 30px;
     width: 100%;
-    height: 400px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -16,16 +16,17 @@ footer {
     label{
     text-transform: uppercase;
     font-family: $font1;
+    font-size: 0.8rem;
     color: rgb(134, 133, 133);
     }
     input{
         height: 40px;
-        width: 90%;
+        width: 100%;
         border: 1px solid $lightGray;
     }
 textarea{
     height: 100px;
-    width: 90%;
+    width: 100%;
     border: 1px solid $lightGray;
     resize: none;
   }
