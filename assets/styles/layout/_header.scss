@@ -59,6 +59,11 @@ header {
     width: 80%;
     background: rgba(255, 255, 255, 0.413);
     #liste-left {
+      
+      @media screen and (max-width:400px){
+        width: 100%;
+
+      }
       &:hover li:not(:hover) {
         background: none;
         color: white;
@@ -83,27 +88,28 @@ header {
           background: white;
           color: black;
           letter-spacing: 5px;
-          @media screen and (max-width:400px){
-            font-size: 0.4rem;
-          }
-
-      }
+          
+        }
+        @media screen and (max-width:400px){
+         
+         text-align: center;
+        }
       // element qui ne possède pas de hover
       li:first-child {
         background: white;
         color: black;
       }
     }
+  }
     #liste-right {
-      width: 100%;
+      width: 30%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
       li {
-        font-size: rem;
+        font-size: 1rem;
         font-family: $font1;
-        
         cursor: pointer;
         margin: 0 auto;
         transition: 0.3s;
@@ -111,8 +117,11 @@ header {
           transform: scale(1.5);
         }
       }
+      @media screen and (max-width:400px){
+        display: none;
+            }
+      
     }
-  }
   // opacity: 0;
   // transform: translateY(40px);
   // animation: apparitionDuHeader 1s ease forwards;

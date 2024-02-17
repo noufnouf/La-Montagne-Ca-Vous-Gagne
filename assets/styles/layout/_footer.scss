@@ -1,7 +1,12 @@
 footer {
     display:grid;
-    grid-template-columns: 1fr 1fr;;
-  width: 80%;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 400px) {
+        grid-template-columns: 1fr;
+        height: 900px;
+        padding: 0px;
+    }
+  width:80%;
   height: 400px;
   margin: 90px auto;
   background: $wihte2;
@@ -23,12 +28,18 @@ footer {
         height: 40px;
         width: 100%;
         border: 1px solid $lightGray;
+        @media screen and (max-width: 400px) {
+            width: 70%;
+        }
     }
 textarea{
     height: 100px;
     width: 100%;
     border: 1px solid $lightGray;
     resize: none;
+    @media screen and (max-width: 400px) {
+        width: 70%;
+    }
   }
   button{
     margin-top: 20px;
@@ -47,6 +58,7 @@ div{
     grid-template-columns: 30% 70%;
     align-items: center;
    h3{
+    text-transform: uppercase;
     text-align: center;
    }
     article{

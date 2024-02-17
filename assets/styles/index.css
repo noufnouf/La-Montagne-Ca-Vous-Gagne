@@ -170,6 +170,11 @@ header .contenaire-header2 #liste-left {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media screen and (max-width: 400px) {
+  header .contenaire-header2 #liste-left {
+    width: 100%;
+  }
+}
 header .contenaire-header2 #liste-left:hover li:not(:hover) {
   background: none;
   color: white;
@@ -199,16 +204,16 @@ header .contenaire-header2 #liste-left li:hover {
   letter-spacing: 5px;
 }
 @media screen and (max-width: 400px) {
-  header .contenaire-header2 #liste-left li:hover {
-    font-size: 0.4rem;
+  header .contenaire-header2 #liste-left li {
+    text-align: center;
   }
 }
 header .contenaire-header2 #liste-left li li:first-child {
   background: white;
   color: black;
 }
-header .contenaire-header2 #liste-left #liste-right {
-  width: 100%;
+header .contenaire-header2 #liste-right {
+  width: 30%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,28 +225,41 @@ header .contenaire-header2 #liste-left #liste-right {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-header .contenaire-header2 #liste-left #liste-right li {
-  font-size: rem;
+header .contenaire-header2 #liste-right li {
+  font-size: 1rem;
   font-family: inter, sans-serif;
   cursor: pointer;
   margin: 0 auto;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-header .contenaire-header2 #liste-left #liste-right li:hover {
+header .contenaire-header2 #liste-right li:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
 }
+@media screen and (max-width: 400px) {
+  header .contenaire-header2 #liste-right {
+    display: none;
+  }
+}
 
 main {
+  position: relative;
   width: 80%;
   height: auto;
   margin: 0 auto;
   background: #f3f3f3;
   padding: 60px;
 }
+@media screen and (max-width: 400px) {
+  main {
+    padding: 0;
+  }
+}
 main section:first-child {
-  height: 1500px;
+  position: relative;
+  height: 1600px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +290,7 @@ main section:first-child ul li {
   font-size: 20px;
   font-family: merri, serif;
   color: rgb(184, 181, 181);
-  width: 80%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,12 +301,18 @@ main section:first-child ul li {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 400px) {
+  main section:first-child ul li {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+  }
+}
 main section:first-child ul li:first-child,
 main section:first-child ul li:last-child {
-  font-size: 30px;
   height: 1px;
-  background: black;
   width: 100%;
+  background: rgba(0, 0, 0, 0.222);
 }
 main section:first-child h2 {
   font-size: 4rem;
@@ -297,18 +321,35 @@ main section:first-child h2 {
   font-family: inter, sans-serif;
   letter-spacing: 3px;
 }
+@media screen and (max-width: 400px) {
+  main section:first-child h2 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+}
 main section:first-child p {
   text-align: center;
-  width: 50%;
+  width: 100%;
   font-size: 1.1rem;
   font-family: merri, serif;
   line-height: 40px;
   font-style: italic;
 }
+@media screen and (max-width: 400px) {
+  main section:first-child p {
+    font-size: 1rem;
+  }
+}
 main section:first-child img {
   width: 100%;
 }
+@media screen and (max-width: 400px) {
+  main section:first-child img {
+    width: 90%;
+  }
+}
 main section:last-child {
+  border-top: 1px solid black;
   margin-top: 120px;
   height: 1000px;
   display: -webkit-box;
@@ -355,6 +396,11 @@ main section:last-child #cote-gauche p {
 main section:last-child #cote-gauche img {
   width: 80%;
 }
+@media screen and (max-width: 400px) {
+  main section:last-child #cote-gauche {
+    width: 100%;
+  }
+}
 main section:last-child #cote-drois {
   height: 100%;
   display: -webkit-box;
@@ -389,6 +435,20 @@ main section:last-child #cote-drois p {
 main section:last-child #cote-drois img {
   width: 80%;
 }
+@media screen and (max-width: 400px) {
+  main section:last-child #cote-drois {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  main section:last-child {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1500px;
+  }
+}
 
 footer {
   display: grid;
@@ -397,6 +457,13 @@ footer {
   height: 400px;
   margin: 90px auto;
   background: #fbfbfb;
+}
+@media screen and (max-width: 400px) {
+  footer {
+    grid-template-columns: 1fr;
+    height: 900px;
+    padding: 0px;
+  }
 }
 footer form {
   padding: 30px;
@@ -427,11 +494,21 @@ footer form input {
   width: 100%;
   border: 1px solid rgb(184, 181, 181);
 }
+@media screen and (max-width: 400px) {
+  footer form input {
+    width: 70%;
+  }
+}
 footer form textarea {
   height: 100px;
   width: 100%;
   border: 1px solid rgb(184, 181, 181);
   resize: none;
+}
+@media screen and (max-width: 400px) {
+  footer form textarea {
+    width: 70%;
+  }
 }
 footer form button {
   margin-top: 20px;
@@ -464,6 +541,7 @@ footer section div {
           align-items: center;
 }
 footer section div h3 {
+  text-transform: uppercase;
   text-align: center;
 }
 footer section div article {
