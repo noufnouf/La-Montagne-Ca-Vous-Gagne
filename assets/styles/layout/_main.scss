@@ -11,7 +11,7 @@ main {
   }
   section:first-child {
     position: relative;
-    height: 800px;
+    height: 1500px;
     // @media screen and (max-width:400px) {
     //   &::after{
     //    content: "";
@@ -78,8 +78,7 @@ main {
   }
 
   section:last-child {
-   
-    border-top: 1px solid black;
+   border-top: 1px solid black;
     margin-top: 120px;
     height: 1000px;
     display: flex;
@@ -98,6 +97,7 @@ main {
       }
     }
     #cote-drois {
+      border-left: 1px solid black;
       @include ph2imgsection2;
       @media screen and (max-width: 400px) {
         margin-top: 30px;

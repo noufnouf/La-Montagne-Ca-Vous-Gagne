@@ -259,7 +259,7 @@ main {
 }
 main section:first-child {
   position: relative;
-  height: 800px;
+  height: 1500px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +410,7 @@ main section:last-child #cote-gauche img {
   }
 }
 main section:last-child #cote-drois {
+  border-left: 1px solid black;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
