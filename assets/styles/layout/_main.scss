@@ -7,10 +7,11 @@ main {
   padding: 60px;
   @media screen and (max-width: 400px) {
     padding: 0;
+    height: 2500px;
   }
   section:first-child {
     position: relative;
-    height: 1600px;
+    height: 800px;
     // @media screen and (max-width:400px) {
     //   &::after{
     //    content: "";
@@ -24,6 +25,7 @@ main {
     width: 100%;
     @include fFDcALcJCsb;
     ul {
+      margin-top: 50px;
       width: 100%;
       @include DfAcJCc;
       li {
@@ -52,7 +54,7 @@ main {
       font-family: $font1;
       letter-spacing: 3px;
       @media screen and (max-width: 400px) {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         width: 100%;
       }
     }
@@ -76,6 +78,7 @@ main {
   }
 
   section:last-child {
+   
     border-top: 1px solid black;
     margin-top: 120px;
     height: 1000px;
@@ -86,6 +89,12 @@ main {
       @include ph2imgsection2;
       @media screen and (max-width: 400px) {
         width: 100%;
+        margin-top: 70px;
+      }
+      h2{
+        @media screen and (max-width: 400px) {
+        font-size: 1.7rem;
+        }
       }
     }
     #cote-drois {
@@ -97,6 +106,7 @@ main {
     @media screen and (max-width: 400px) {
       flex-direction: column;
       height: 1500px;
+      margin-top: 160px;
     }
   }
 }
