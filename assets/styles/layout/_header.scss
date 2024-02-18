@@ -122,15 +122,15 @@ header {
             }
       
     }
-  // opacity: 0;
-  // transform: translateY(40px);
-  // animation: apparitionDuHeader 1s ease forwards;
-  // animation-delay: 1s;
-  // @keyframes apparitionDuHeader {
-  //   to {
-  //     opacity: 1;
-  //     transform: translateY(0);
-  //   }
-  // }
-}
+  }
+  opacity: 0;
+  transform: translateY(40px);
+  animation: apparitionDuHeader 1s ease forwards;
+  animation-delay: 1s;
+  @keyframes apparitionDuHeader {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

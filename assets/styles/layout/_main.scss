@@ -1,29 +1,33 @@
 main {
   position: relative;
   width: 80%;
-  height: auto;
+  height: 3200px;
   margin: 0 auto;
   background: $wihte1;
   padding: 60px;
   @media screen and (max-width: 400px) {
     padding: 0;
-    height: 2500px;
+    height: 2700px;
   }
   section:first-child {
+    @media screen and (max-width: 400px) {
+     height: 800px;
+     &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: black;
+      bottom: 0;
+     }
+    }
     position: relative;
-    height: 1500px;
-    // @media screen and (max-width:400px) {
-    //   &::after{
-    //    content: "";
-    //    position: absolute;
-    //    width: 100%;
-    //    height: 1px;
-    //    background: black;
-    //    bottom: 0;
-    //   }
-
+    height: 1900px;
     width: 100%;
-    @include fFDcALcJCsb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     ul {
       margin-top: 50px;
       width: 100%;
@@ -75,38 +79,40 @@ main {
         width: 90%;
       }
     }
-  }
+  border-bottom: 1px solid black;
+}
 
   section:last-child {
-   border-top: 1px solid black;
-    margin-top: 120px;
-    height: 1000px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    #cote-gauche {
-      @include ph2imgsection2;
-      @media screen and (max-width: 400px) {
-        width: 100%;
-        margin-top: 70px;
-      }
-      h2{
-        @media screen and (max-width: 400px) {
-        font-size: 1.7rem;
-        }
-      }
-    }
-    #cote-drois {
-      border-left: 1px solid black;
-      @include ph2imgsection2;
-      @media screen and (max-width: 400px) {
-        margin-top: 30px;
-      }
-    }
     @media screen and (max-width: 400px) {
       flex-direction: column;
-      height: 1500px;
+      height: 1700px;
       margin-top: 160px;
     }
-  }
+     
+      margin-top: 120px;
+      height: 1000px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #cote-gauche {
+        @include ph2imgsection2;
+        @media screen and (max-width: 400px) {
+          width: 100%;
+          margin-top: 70px;
+          
+        }
+        h2{
+          @media screen and (max-width: 400px) {
+            font-size: 1.7rem;
+          }
+        }
+      }
+      #cote-drois {
+        border-left: 1px solid black;
+        @include ph2imgsection2;
+        @media screen and (max-width: 400px) {
+          margin-top: 30px;
+        }
+      } 
+    }
 }
