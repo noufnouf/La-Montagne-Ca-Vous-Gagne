@@ -1,0 +1,4 @@
+ici on peut dire au robot de google de ne pas référencer les page que nous ne voulons pas être référencer de notre site .
+http://robots-txt.com
+user-agent: *
+Disallow: /page-a.html
